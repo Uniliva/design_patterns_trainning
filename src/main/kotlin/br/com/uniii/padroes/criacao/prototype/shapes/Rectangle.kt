@@ -6,8 +6,7 @@ class Rectangle(x: Int, y: Int, color: String, val width: Int, val height: Int) 
     override fun clone(): Shape = Rectangle(this)
     override fun equals(object2: Any?): Boolean {
         if (object2 !is Rectangle || !super.equals(object2)) return false
-        val shape2 = object2
-        return shape2.width === width && shape2.height === height
+        return object2.width === width && object2.height === height
     }
 
 }

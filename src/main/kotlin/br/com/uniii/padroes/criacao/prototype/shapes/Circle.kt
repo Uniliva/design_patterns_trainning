@@ -8,6 +8,6 @@ class Circle(x: Int, y: Int, color: String, val radius: Int) : Shape(x, y, color
 
     override fun equals(object2: Any?): Boolean {
         if (object2 !is Circle || !super.equals(object2)) return false
-        return object2.radius === radius
+        return object2.radius == radius
     }
 }

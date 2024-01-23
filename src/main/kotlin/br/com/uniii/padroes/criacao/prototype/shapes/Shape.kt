@@ -12,7 +12,6 @@ abstract class Shape(
 
     override fun equals(object2: Any?): Boolean {
         if (object2 !is Shape) return false
-        val shape2 = object2
-        return shape2.x === x && shape2.y === y && shape2.color == color
+        return object2.x == x && object2.y == y && object2.color == color
     }
 }
