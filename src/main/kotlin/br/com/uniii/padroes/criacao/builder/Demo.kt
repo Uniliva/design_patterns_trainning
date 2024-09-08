@@ -4,9 +4,6 @@ import br.com.uniii.padroes.criacao.builder.builders.CarBuilder
 import br.com.uniii.padroes.criacao.builder.builders.CarManualBuilder
 import br.com.uniii.padroes.criacao.builder.director.Director
 
-
-class Demo {}
-
 fun main(args: Array<String>) {
     val director = Director()
 
